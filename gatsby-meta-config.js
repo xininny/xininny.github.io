@@ -1,8 +1,8 @@
 module.exports = {
-  title: `zoomkoding.com`,
-  description: `줌코딩의 개발일기`,
+  title: `xininny.com`,
+  description: `전미진의 개발일기`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
-  siteUrl: `https://www.zoomkoding.com`,
+  siteUrl: `https://www.xininny.com`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
@@ -11,16 +11,16 @@ module.exports = {
   },
   ga: '0', // Google Analytics Tracking ID
   author: {
-    name: `정진혁`,
+    name: `전미진`,
     bio: {
       role: `개발자`,
-      description: ['사람에 가치를 두는', '능동적으로 일하는', '이로운 것을 만드는'],
+      description: ['매일 조금씩 성장하는', '배우는 것을 좋아하는', '이로운 것을 만드는'],
       thumbnail: 'sample.png', // Path to the image in the 'asset' folder
     },
     social: {
-      github: ``, // `https://github.com/zoomKoding`,
+      github: `https://github.com/xininny`, // `https://github.com/zoomKoding`,
       linkedIn: ``, // `https://www.linkedin.com/in/jinhyeok-jeong-800871192`,
-      email: ``, // `zoomkoding@gmail.com`,
+      email: `xininny@gmail.com`, // `zoomkoding@gmail.com`,
     },
   },
 
@@ -43,13 +43,28 @@ module.exports = {
       // ========================================================
       // ========================================================
       {
-        date: '2021.02 ~',
-        activity: '개인 블로그 개발 및 운영',
-        links: {
-          post: '/gatsby-starter-zoomkoding-introduction',
-          github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
-          demo: 'https://www.zoomkoding.com',
-        },
+        date: '2021.03 ~',
+        activity: '가톨릭대학교 컴퓨터정보공학부 입학',
+      },
+      {
+        date: '2021.02',
+        activity: '삼성생명 SFP 금융 아카데미',
+      },
+      {
+        date: '2023.05 ~ 2023.06',
+        activity: '부스트코스 <BEYOND AI BASIC> 코칭스터디',
+      },
+      {
+        date: '2023.07 ~ 2023.11',
+        activity: 'KISIA AI보안 기술개발 개인정보반',
+      },
+      {
+        date: '2024.01 ~',
+        activity: 'KISIA ICT 융합산업보안 크루 AI 보안',
+      },
+      {
+        date: '2024.02 ~',
+        activity: '개발 블로그 운영',
       },
     ],
 
