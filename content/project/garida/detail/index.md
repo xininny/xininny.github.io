@@ -4,7 +4,7 @@ title: 가리다(GaRiDa) | 2. 주요 기능
 date: '2024-02-07 00:00:00'
 author: xininny
 tags: Flutter Docker Masking
-categories: 🔥PROJECT
+categories: PROJECT
 ---
 
 가리다(GaRiDa)는 안전한 SNS 사용을 위한 개인정보 마스킹 어플입니다.

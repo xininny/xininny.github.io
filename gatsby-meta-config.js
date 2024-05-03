@@ -2,14 +2,14 @@ module.exports = {
   title: `xininny.com`,
   description: `전미진의 개발일기`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
-  siteUrl: `https://www.xininny.com`,
+  siteUrl: `https://xininny.github.io/`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
       repo: ``, // `zoomkoding/zoomkoding-gatsby-blog`,
     },
   },
-  ga: '0', // Google Analytics Tracking ID
+  ga: 'G-42SK0722KJ', // Google Analytics Tracking ID
   author: {
     name: `전미진`,
     bio: {
