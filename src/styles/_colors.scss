@@ -27,23 +27,23 @@ html {
 
 // dark mode colors
 html[data-theme='dark'] {
-  --background-color: #232326;
-  --primary-text-color: #e6e6e6;
-  --secondary-text-color: #768390;
-  --content-text-color: #e6e6e6;
+  --background-color: #212121;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #e6e6e6;
+  --content-text-color: #ffffff;
 
   --button-background-color: #444c56;
   --button-text-color: #363f47;
 
-  --tab-text-color: #768390;
-  --tab-hover-text-color: #acbac7;
-  --tab-selected-background-color: #373e47;
+  --tab-text-color: #e6e6e6;
+  --tab-hover-text-color: #f04406;
+  --tab-selected-background-color: #fff6ed;
 
   --chip-background-color: #323a42;
-  --bio-link-icon-color: #e6e6e6;
+  --bio-link-icon-color: #ffffff;
   --about-link-icon-color: #a8a8a8;
 
-  --link-text-color: #90b0ec;
+  --link-text-color: #ff8237;
   --post-card-border-color: #363f47;
 
   --markdown-table-even-cell-background-color: #2d333b;
