@@ -11,6 +11,8 @@ categories: PROJECT
 
 생성형 이미지를 통해 사진의 이질감을 줄여주는 자연스러운 얼굴 마스킹으로 본인 뿐만 아니라 사진에 나온 다른 얼굴을 가리는데 편리함을 주고자 하였습니다.@
 
+<br>
+
 ## 1. 프로젝트 시작
 
 4주간의 교육을 마치고 팀 프로젝트로 안전한 SNS 사용을 위한 개인정보 마스킹 어플 가리다(GaRiDa)를 개발했다.
@@ -123,3 +125,15 @@ AI 파트에서도 문제가 많았다.
 무엇보다도 좋은 팀원과 멘토님을 만나 좋은 주제로 프로젝트를 진행하고 프로그램을 개발해보았다는 것에 크게 만족하고 있다.
 
 첫 대외활동, 첫 대외 프로젝트로 걱정이 많았지만 걱정을 잊을만큼 많은 것을 배우고 개선점을 느낄 수 있는 귀중한 시간이였다.
+
+```toc
+
+```
+
+<script src="https://utteranc.es/client.js"
+        repo="xininny/xininny.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

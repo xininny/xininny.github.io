@@ -11,9 +11,13 @@ categories: RECORD
 
 더군다나 보안 관련 대외활동은 많지 않기에 막막했는데 마침 KISIA(한국정보보호산업협회)에서 AI 보안 기술개발 교육과정이 열린다는 것을 보고 지원하게 되었다.@
 
+<br>
+
 ## 1. AI보안 기술개발 교육과정
 
-우선 교육과정에 대해 설명하자면 AI 보안 기술개발 교육과정은 악성코드, 네트워크, 개인정보반으로 나눠진다. 개인정보반은 내가 들어갔을 당시 처음으로 생긴 반이였다.  
+![kisia-ai-security-poster.png](kisia-ai-security-poster.png)
+
+우선 교육과정에 대해 설명하자면 AI 보안 기술개발 교육과정은 악성코드, 네트워크, 개인정보반으로 나눠진다. 그 중 개인정보반은 내가 들어갔을 당시 처음으로 생긴 반이였다.  
 나는 그중 개인정보반을 신청했고 감사하게도 합격을 하게 되어 한 달동안 교육을 받고 프로젝트까지 해서 교육과정을 수료했다.
 
 교육은 공통 교육과 심화교육으로 이루어진다.  
@@ -29,7 +33,7 @@ categories: RECORD
 
 ## 2. 지원서 및 면접
 
-**1) 지원서**
+### 1) 지원서
 
 지원서는 간단한 이력사항을 기재할 수 있는 항목과 자기소개서로 구성되어 있었다.
 
@@ -46,7 +50,7 @@ categories: RECORD
 
 ![kisia-first-pass.png](kisia-first-pass.png)
 
-**2) 면접**
+### 2) 면접
 
 면접은 한국정보보호산업협회 건물에서 진행되었고 대기실과 면접실은 따로 있었다. 복장은 단정하게 보일 수 있는 정도의 옷을 입고 갔다. (정장 입고 오신 분들도 계시기는 했다.)
 
@@ -65,3 +69,15 @@ categories: RECORD
 최종 합격 결과는 면접 본 다음 날 오후 6시에 왔고 최종 합격하였다.
 
 ![kisia-first-pass.png](kisia-final-pass.png)
+
+```toc
+
+```
+
+<script src="https://utteranc.es/client.js"
+        repo="xininny/xininny.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

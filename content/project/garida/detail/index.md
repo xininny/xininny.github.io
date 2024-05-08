@@ -80,3 +80,15 @@ Open AI에서 발표한 Dall-E2는 텍스트 프롬프트를 받아들여 텍스
 <br>
 
 다음 글에서는 가리다(GaRiDa) 어플의 **프로토타입**을 소개해드리겠습니다.
+
+```toc
+
+```
+
+<script src="https://utteranc.es/client.js"
+        repo="xininny/xininny.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

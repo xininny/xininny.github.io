@@ -75,3 +75,15 @@ docker run -p 8080:8080 test-dalle
 ![garida-fastapi.png](garida-fastapi.png)
 
 이렇게 작동되는 것을 확인할 수 있습니다.
+
+```toc
+
+```
+
+<script src="https://utteranc.es/client.js"
+        repo="xininny/xininny.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

@@ -8,6 +8,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    font-family: 'NanumSquare';
 
     .post-card-wrapper {
       margin-bottom: 20px;
@@ -17,7 +18,7 @@
       height: 40px;
       font-weight: 500;
       font-size: 15px;
-      background-color: var(--button-background-color);
+      background-color: var(--tab-selected-background-color);
       color: var(--tab-hover-text-color);
     }
   }

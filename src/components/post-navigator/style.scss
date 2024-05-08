@@ -5,12 +5,13 @@
   width: 100%;
   grid-template-columns: 49.3% 49.3%;
   column-gap: 1.4%;
+  font-family: 'NanumSquare';
 
   .post-card {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border: 1px solid var(--post-card-border-color);
+    border: 2px solid var(--post-card-border-color);
     border-radius: 6px;
     padding: 15px;
 

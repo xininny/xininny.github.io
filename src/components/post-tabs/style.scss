@@ -23,7 +23,7 @@
         min-height: auto;
         min-width: auto;
         padding: 8px 10px;
-        font-family: $font-family;
+        font-family: 'NanumSquare';
         color: var(--tab-text-color);
         font-weight: 500;
         font-size: 14px;
@@ -40,7 +40,7 @@
         background-color: var(--tab-selected-background-color);
         color: var(--tab-hover-text-color);
         border-radius: 8px;
-        font-weight: 600;
+        font-weight: 900;
         transition: all 200ms ease;
       }
 
