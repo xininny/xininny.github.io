@@ -225,11 +225,3 @@ print('''여러 줄에 걸친
 ```toc
 
 ```
-
-<script src="https://utteranc.es/client.js"
-        repo="xininny/xininny.github.io"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

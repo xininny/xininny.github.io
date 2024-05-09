@@ -3,7 +3,7 @@ emoji: 🐍
 title: Python | 3. input 함수
 date: '2024-02-16 00:00:00'
 author: xininny
-tags: Python 함수 내장함수 Print
+tags: Python 함수 input
 categories: Python
 ---
 
@@ -80,11 +80,3 @@ ValueError                                Traceback (most recent call last)
 
 ValueError: invalid literal for int() with base 10: 'AA'
 ```
-
-<script src="https://utteranc.es/client.js"
-        repo="xininny/xininny.github.io"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

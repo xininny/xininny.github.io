@@ -84,11 +84,3 @@ Open AI에서 발표한 Dall-E2는 텍스트 프롬프트를 받아들여 텍스
 ```toc
 
 ```
-
-<script src="https://utteranc.es/client.js"
-        repo="xininny/xininny.github.io"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

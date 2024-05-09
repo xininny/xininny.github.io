@@ -129,11 +129,3 @@ AI 파트에서도 문제가 많았다.
 ```toc
 
 ```
-
-<script src="https://utteranc.es/client.js"
-        repo="xininny/xininny.github.io"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

@@ -45,11 +45,3 @@ categories: PROJECT
 <br>
 
 다음 글에서는 가리다(GaRiDa) 어플의 **주요 기능**에 대해 소개해드리겠습니다.
-
-<script src="https://utteranc.es/client.js"
-        repo="xininny/xininny.github.io"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
