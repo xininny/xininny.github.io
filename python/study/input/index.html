@@ -48,149 +48,54 @@
         }
       }
     })
-  </script><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><title data-react-helmet="true">Python | 3. input 함수</title></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">xininny.com</a></div><div class="trailing-section"><a class="link" href="/about">About</a><a class="link" href="/posts">Posts</a><a href="https://github.com/xininny" class="link" target="_blank">GitHub</a></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">🐍</div><div class="info"><div class="categories"><a class="category" href="/posts/Python">Python</a></div></div><h1 class="title">Python | 4. 연산자</h1><div class="info"><div class="author">posted by <strong>xininny</strong>,</div> <!-- -->February 17, 2024</div></header><div class="post-content"><div class="markdown"><p>연산자에는 산술 연산자, 관계 연산자(비교 연산자), 논리 연산자, 대입 연산자가 있다.@</p>
+  </script><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><title data-react-helmet="true">Python | 3. input 함수</title></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">xininny.com</a></div><div class="trailing-section"><a class="link" href="/about">About</a><a class="link" href="/posts">Posts</a><a href="https://github.com/xininny" class="link" target="_blank">GitHub</a></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">𝐏</div><div class="info"><div class="categories"><a class="category" href="/posts/Python">Python</a></div></div><h1 class="title">Python | 3. input 함수</h1><div class="info"><div class="author">posted by <strong>xininny</strong>,</div> <!-- -->February 16, 2024</div></header><div class="post-content"><div class="markdown"><p>print( ) 함수와 반대 기능을 수행한다.@</p>
 <br>
-<h2 id="1-산술-연산자" style="position:relative;"><a href="#1-%EC%82%B0%EC%88%A0-%EC%97%B0%EC%82%B0%EC%9E%90" aria-label="1 산술 연산자 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. 산술 연산자</h2>
-<p>산술 연산자는 가장 기본적인 연산자다.<br>
-대부분의 연산자는 일반적으로 수학에서 사용하는 심볼과 동일하다.<br>
-일반 수학 연산처럼 왼쪽 연산자부터 계산하고 곱셈과 나눗셈이 있다면 먼저 계산한다.<br>
-연산자는 괄호가 있다면 괄호 부분을 먼저 계산한다.<br>
-즉, <strong>괄호도 연산자다.</strong> 괄호는 연산의 우선 순위를 결정해준다.</p>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token operator">+</span><span class="token number">4</span><span class="token operator">+</span><span class="token number">5</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token operator">+</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token operator">-</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token operator">+</span><span class="token number">4</span><span class="token operator">-</span><span class="token number">5</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token operator">*</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token operator">+</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-</code></pre></div>
-<div class="gatsby-highlight" data-language="powershell"><pre class="language-powershell"><code class="language-powershell">12
-2
-2
-27</code></pre></div>
-<br>
-<p>나눗셈은 실수, 정수, 나머지 연산자로 나뉜다.</p>
-<ul>
-<li>/는 <strong>실수 나눗셈</strong>이다. 실수 나눗셈이란 나눗셈의 결과가 <strong>실수</strong>로 나오는 것을 말한다.</li>
-<li>//는 <strong>정수 나눗셈</strong>이다. 나눗셈의 결과로 <strong>정수값(몫)을</strong> 반환한다.<br>
-나눗셈 연산 후 소수부분은 버리고 정수부분만 남겨둔다(floor division이라고 한다)</li>
-<li>%는 <strong>나머지 연산자</strong>다. 이름 그대로 <strong>나머지</strong>를 반환한다.</li>
-</ul>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token operator">/</span><span class="token number">3</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token operator">//</span><span class="token number">3</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token operator">%</span><span class="token number">3</span><span class="token punctuation">)</span></code></pre></div>
-<div class="gatsby-highlight" data-language="powershell"><pre class="language-powershell"><code class="language-powershell">3<span class="token punctuation">.</span>3333333333333335
-3
-1</code></pre></div>
-<br>
-<h2 id="2-관계-연산자비교-연산자" style="position:relative;"><a href="#2-%EA%B4%80%EA%B3%84-%EC%97%B0%EC%82%B0%EC%9E%90%EB%B9%84%EA%B5%90-%EC%97%B0%EC%82%B0%EC%9E%90" aria-label="2 관계 연산자비교 연산자 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. 관계 연산자(비교 연산자)</h2>
-<p>관계 연산자를 하기 전 boolean(불리언, 부울) 자료형을 설명하자면<br>
-<strong>boolean 자료형</strong>은 <strong>True 또는 False</strong>를 값으로 가지는 자료형이다.
-첫 글자가 <strong>대문자</strong>로 시작한다.</p>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">a <span class="token operator">=</span> <span class="token boolean">True</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<h2 id="input-함수" style="position:relative;"><a href="#input-%ED%95%A8%EC%88%98" aria-label="input 함수 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>input 함수</h2>
+<p>print( ) 함수와 input( ) 함수를 연속해서 사용함으로써 입력값을 확인할 수 있다.<br>
+입력값의 자료형을 알아볼 땐 <strong>type( )를</strong> 사용한다.<br>
+입력값은 무조건 문자열이고, 숫자를 입력하더라도 문자열로 입력된다.<br>
+즉 input 함수는 <strong>문자열을 반환</strong>한다.</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Please, input a number:'</span><span class="token punctuation">)</span>
+a <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'You entered:'</span><span class="token punctuation">,</span> a<span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">type</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">)</span>
-b <span class="token operator">=</span> <span class="token boolean">False</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span></code></pre></div>
-<div class="gatsby-highlight" data-language="powershell"><pre class="language-powershell"><code class="language-powershell">True
-&lt;<span class="token keyword">class</span> <span class="token string">'bool'</span>>
-False</code></pre></div>
+
+<span class="token comment"># 또는 아래와 같이 input( ) 함수를 사용할 수도 있음</span>
+<span class="token comment"># input() 함수에 문자열을 파라미터로 사용하면 메세지 출력 후에 값을 입력받을 수 있음</span>
+
+b <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">'Please, input a second number:'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'You entered:'</span><span class="token punctuation">,</span> b<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="powershell"><pre class="language-powershell"><code class="language-powershell">Please<span class="token punctuation">,</span> input a number:
+linux
+You entered: linux
+&lt;<span class="token keyword">class</span> <span class="token string">'str'</span>>
+Please<span class="token punctuation">,</span> input a second number:123
+You entered: 123</code></pre></div>
 <br>
-<p>관계 연산자의 결과는 True 또는 False이다.<br>
-관계를 검사한다는 의미이기에 관계를 만족하면 True, 그렇지 않으면 False가 된다.<br>
-관계 연산자는 조건문과 반복문 등의 제어문에서 많이 사용한다.</p>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment"># 같은지</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">!=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment"># 다른지</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">!=</span> <span class="token number">2</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">></span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment"># 큰지</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">&lt;</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token comment"># 작은지</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">>=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment"># 크거나 같은지</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">>=</span> <span class="token number">2</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">&lt;=</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token comment"># 작거나 같은지</span></code></pre></div>
-<div class="gatsby-highlight" data-language="powershell"><pre class="language-powershell"><code class="language-powershell">True
-False
-False
-True
-False
-True
-True
-False
-True</code></pre></div>
+<p>input( ) 함수는 문자열을 반환한다.<br>
+따라서 정수를 입력받고 싶으면 int( ) 함수를 이용해서 문자열을 숫자로 변환할 수 있다<br>
+즉, input( ) 함수는 문자열로 입력받기 때문에 <strong>숫자를 입력받으려면 int( ) 함수로 변환해서 사용</strong>한다.</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">msg <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter any number and l will add 10 to the number: "</span><span class="token punctuation">)</span>
+no <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">float</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"You entered"</span><span class="token punctuation">,</span> no<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"I'll add"</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token string">"to it"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"So, the result is..."</span><span class="token punctuation">,</span> no <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="powershell"><pre class="language-powershell"><code class="language-powershell">Enter any number and l will add 10 to the number: 123<span class="token punctuation">.</span>1
+You entered 123
+I'll add 10 to it
+So<span class="token punctuation">,</span> the result is<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> 133</code></pre></div>
 <br>
-<h2 id="3-논리-연산자" style="position:relative;"><a href="#3-%EB%85%BC%EB%A6%AC-%EC%97%B0%EC%82%B0%EC%9E%90" aria-label="3 논리 연산자 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. 논리 연산자</h2>
-<p>논리 연산자는 <strong>and, or, not</strong>이 있다.<br>
-논리 연산자의 <strong>결과는 True 또는 False</strong>이다.<br>
-또한, 논리 연산자의 피연산자는 논리값이기에 논리 연산자라고 한다.</p>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token boolean">True</span> <span class="token keyword">and</span> <span class="token boolean">False</span><span class="token punctuation">)</span> <span class="token comment"># and 연산자는 피연산자 2개가 모두 True인 경우에 True</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token boolean">True</span> <span class="token keyword">and</span> <span class="token boolean">True</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token boolean">True</span> <span class="token keyword">or</span> <span class="token boolean">False</span><span class="token punctuation">)</span> <span class="token comment"># or 연산자는 피연산자 중 1개라도 True인 경우에 True</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token boolean">True</span> <span class="token keyword">or</span> <span class="token boolean">True</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token boolean">False</span> <span class="token keyword">or</span> <span class="token boolean">False</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">==</span><span class="token number">1</span> <span class="token keyword">and</span> <span class="token number">2</span><span class="token operator">==</span><span class="token number">2</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">!=</span><span class="token number">1</span> <span class="token keyword">and</span> <span class="token number">2</span><span class="token operator">==</span><span class="token number">2</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">==</span><span class="token number">1</span> <span class="token keyword">and</span> <span class="token number">2</span><span class="token operator">!=</span><span class="token number">2</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">!=</span><span class="token number">1</span> <span class="token keyword">and</span> <span class="token number">2</span><span class="token operator">!=</span><span class="token number">2</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">==</span><span class="token number">1</span> <span class="token keyword">or</span> <span class="token number">2</span><span class="token operator">==</span><span class="token number">2</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">!=</span><span class="token number">1</span> <span class="token keyword">or</span> <span class="token number">2</span><span class="token operator">==</span><span class="token number">2</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">==</span><span class="token number">1</span> <span class="token keyword">or</span> <span class="token number">2</span><span class="token operator">!=</span><span class="token number">2</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">!=</span><span class="token number">1</span> <span class="token keyword">or</span> <span class="token number">2</span><span class="token operator">!=</span><span class="token number">2</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token keyword">not</span> <span class="token number">10</span> <span class="token operator">></span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token comment"># not 연산자는 반대</span></code></pre></div>
-<div class="gatsby-highlight" data-language="powershell"><pre class="language-powershell"><code class="language-powershell">False
-True
-True
-True
-False
-True
-False
-False
-False
-True
-True
-True
-False
-False</code></pre></div>
-<br>
-<h2 id="4-대입-연산자" style="position:relative;"><a href="#4-%EB%8C%80%EC%9E%85-%EC%97%B0%EC%82%B0%EC%9E%90" aria-label="4 대입 연산자 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. 대입 연산자</h2>
-<p>대입 연산자는 변수에 값을 대입한다.<br>
-2개 이상의 변수에 동시에 대입이 가능하다.</p>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">a <span class="token operator">=</span> <span class="token number">10</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<p>int( ) 함수를 통해서 파라미터를 int 자료형으로 변경할 수 있다고 했지만 아래 문장은 에러다.<br>
+“1”, “123” 처럼 <strong>숫자로 된 문자열만 변경이 가능</strong>하다.</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">(</span><span class="token string">"AA"</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="powershell"><pre class="language-powershell"><code class="language-powershell">ValueError                                Traceback <span class="token punctuation">(</span>most recent call last<span class="token punctuation">)</span>
+&lt;ipython-input-11-3688a62e4fa1> in &lt;module><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      2 <span class="token comment"># 그렇지만 아래 문장은 에러다</span>
+      3 <span class="token comment"># "1", "123" 처럼 숫자로 된 문자열만 변경이 가능하다.</span>
+<span class="token operator">--</span><span class="token operator">--</span>> 4 print<span class="token punctuation">(</span>int<span class="token punctuation">(</span><span class="token string">"AA"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 
-a<span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span></code></pre></div>
-<div class="gatsby-highlight" data-language="powershell"><pre class="language-powershell"><code class="language-powershell">10
-10 20</code></pre></div>
-<br>
-<p>대입 연산자 이외에도 <strong>복합 대입 연산자</strong>가 있다.<br>
-<strong>+=, -=, *=, /=, //=, %=, **=</strong> 들이 복합 대입 연산자다.<br>
-예를 들어 += 연산자는 좌측의 변수값에 더해서 넣는다는 의미다.</p>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">a <span class="token operator">=</span> <span class="token number">10</span>
-
-a <span class="token operator">+=</span> <span class="token number">20</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
-
-a <span class="token operator">-=</span> <span class="token number">10</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
-
-a <span class="token operator">*=</span> <span class="token number">2</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
-
-a <span class="token operator">//=</span> <span class="token number">2</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
-
-a <span class="token operator">%=</span> <span class="token number">2</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span></code></pre></div>
-<div class="gatsby-highlight" data-language="powershell"><pre class="language-powershell"><code class="language-powershell">30
-20
-40
-20
-0</code></pre></div>
-<div class="table-of-contents">
-<ul>
-<li><a href="#1-%EC%82%B0%EC%88%A0-%EC%97%B0%EC%82%B0%EC%9E%90">1. 산술 연산자</a></li>
-<li><a href="#2-%EA%B4%80%EA%B3%84-%EC%97%B0%EC%82%B0%EC%9E%90%EB%B9%84%EA%B5%90-%EC%97%B0%EC%82%B0%EC%9E%90">2. 관계 연산자(비교 연산자)</a></li>
-<li><a href="#3-%EB%85%BC%EB%A6%AC-%EC%97%B0%EC%82%B0%EC%9E%90">3. 논리 연산자</a></li>
-<li><a href="#4-%EB%8C%80%EC%9E%85-%EC%97%B0%EC%82%B0%EC%9E%90">4. 대입 연산자</a></li>
-</ul>
-</div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/python/input/"><div class="direction">이전 글</div><div class="title">Python | 3. input 함수</div></a></div><div class="post-navigator-card-wrapper"></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2024<!-- --> <a href="https://github.com/xininny">전미진</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-42SK0722KJ"></script><script>
+ValueError: invalid literal <span class="token keyword">for</span> int<span class="token punctuation">(</span><span class="token punctuation">)</span> with base 10: <span class="token string">'AA'</span></code></pre></div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/python/study/variables/"><div class="direction">이전 글</div><div class="title">Python | 2. 변수(variables)</div></a></div><div class="post-navigator-card-wrapper"><a class="post-card next" href="/python/study/operators/"><div class="direction">다음 글</div><div class="title">Python | 4. 연산자</div></a></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2024<!-- --> <a href="https://github.com/xininny">전미진</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-42SK0722KJ"></script><script>
     window.GATSBY_GTAG_PLUGIN_GA_TRACKING_ID = (
       'G-42SK0722KJ'
     );
@@ -208,4 +113,4 @@ a <span class="token operator">%=</span> <span class="token number">2</span>
     window.gtag = gtag;
     gtag('js', new Date());
     gtag('config', 'G-42SK0722KJ', options);
-  </script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/python/operators/";window.___webpackCompilationHash="ba5f026243f9e8e71d64";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-f196834924f88edde8fc.js"],"app":["/app-63e9617b3796f6fd2397.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-12b5d8159c7e67968cd6.js"],"component---src-pages-404-js":["/component---src-pages-404-js-8a8f7d3d2c342b72400e.js"],"component---src-pages-about-js":["/component---src-pages-about-js-53c51b967b7c7ebf2161.js"],"component---src-pages-index-js":["/component---src-pages-index-js-6eb614986f21f4e72ca4.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-842c3d7e07eb7ef5f439.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-e2e4c74724e028ddd3f4.js"]};/*]]>*/</script><script src="/polyfill-f196834924f88edde8fc.js" nomodule=""></script><script src="/app-63e9617b3796f6fd2397.js" async=""></script><script src="/framework-de157c6b30d4790e4e81.js" async=""></script><script src="/webpack-runtime-6df48cce433b62ad9ecd.js" async=""></script></body></html>
+  </script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/python/study/input/";window.___webpackCompilationHash="ba5f026243f9e8e71d64";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-f196834924f88edde8fc.js"],"app":["/app-63e9617b3796f6fd2397.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-12b5d8159c7e67968cd6.js"],"component---src-pages-404-js":["/component---src-pages-404-js-8a8f7d3d2c342b72400e.js"],"component---src-pages-about-js":["/component---src-pages-about-js-53c51b967b7c7ebf2161.js"],"component---src-pages-index-js":["/component---src-pages-index-js-6eb614986f21f4e72ca4.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-842c3d7e07eb7ef5f439.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-e2e4c74724e028ddd3f4.js"]};/*]]>*/</script><script src="/polyfill-f196834924f88edde8fc.js" nomodule=""></script><script src="/app-63e9617b3796f6fd2397.js" async=""></script><script src="/framework-de157c6b30d4790e4e81.js" async=""></script><script src="/webpack-runtime-6df48cce433b62ad9ecd.js" async=""></script></body></html>
