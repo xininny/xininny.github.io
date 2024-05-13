@@ -48,111 +48,88 @@
         }
       }
     })
-  </script><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><title data-react-helmet="true">Python | 6. 자료형과 형 변환</title></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">xininny.com</a></div><div class="trailing-section"><a class="link" href="/about">About</a><a class="link" href="/posts">Posts</a><a href="https://github.com/xininny" class="link" target="_blank">GitHub</a></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">𝐏</div><div class="info"><div class="categories"><a class="category" href="/posts/Python">Python</a></div></div><h1 class="title">Python | 2. 변수(variables)</h1><div class="info"><div class="author">posted by <strong>xininny</strong>,</div> <!-- -->February 15, 2024</div></header><div class="post-content"><div class="markdown"><p>컴퓨터는 사용하는 데이터를 주기억장치에 보관해서 사용한다.<br>
-이 값을 CPU로 가져와서 사용하려면, 그 변수가 위치한 곳의 주소를 일일이 기억해야한다.<br>
-그게 귀찮아서, 이름을 붙여서 사용하는데<br>
-그것이 바로 <strong>변수</strong>다.@</p>
+  </script><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><title data-react-helmet="true">Python | 6. 자료형과 형 변환</title></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">xininny.com</a></div><div class="trailing-section"><a class="link" href="/about">About</a><a class="link" href="/posts">Posts</a><a href="https://github.com/xininny" class="link" target="_blank">GitHub</a></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">𝐏</div><div class="info"><div class="categories"><a class="category" href="/posts/Python">Python</a></div></div><h1 class="title">Python | 6. 자료형과 형 변환</h1><div class="info"><div class="author">posted by <strong>xininny</strong>,</div> <!-- -->February 19, 2024</div></header><div class="post-content"><div class="markdown"><p>파이썬에서는 실용적이고 많은 자료형이 제공된다.@</p>
 <br>
-<h2 id="변수" style="position:relative;"><a href="#%EB%B3%80%EC%88%98" aria-label="변수 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>변수</h2>
-<p>변수의 이름은 <strong>기능/역할/의미</strong>를 파악할 수 있도록 상세하게 만드는 것이 좋다.<br>
-underscore(_)를 통해서 변수의 이름을 만드는 것이 일반적이다.</p>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 아래는 다양한 변수를 만들고, 원하는 값을 저장해서 사용</span>
-
-my_number <span class="token operator">=</span> <span class="token number">100</span> <span class="token comment"># 정수형 변수</span>
-my_name   <span class="token operator">=</span> <span class="token string">"Kim"</span> <span class="token comment"># 문자열 변수</span>
-my_height <span class="token operator">=</span> <span class="token number">172.3</span> <span class="token comment"># 실수형 변수</span>
-is_middle_school <span class="token operator">=</span> <span class="token boolean">True</span> <span class="token comment"># 불리언(boolean) 변수</span></code></pre></div>
+<h2 id="1-자료형" style="position:relative;"><a href="#1-%EC%9E%90%EB%A3%8C%ED%98%95" aria-label="1 자료형 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. 자료형</h2>
+<p>파이썬은 <strong>동적 타입 바인딩</strong> 언어이다.<br>
+즉, 변수를 선언할 때 어떤 자료형의 값을 저장할 것이라고 미리 정해둘 필요가 없다.</p>
+<div class="gatsby-highlight" data-language="c"><pre class="language-c"><code class="language-c"><span class="token comment">//C언어에서는 아래와 같이 해야한다.</span>
+<span class="token keyword">int</span> a<span class="token punctuation">;</span>
+a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span></code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 파이썬은 아래와 같이 하면 된다.</span>
+a <span class="token operator">=</span> <span class="token number">1</span> <span class="token comment"># 이 대입 연산으로 인해서 변수 a는 정수형 변수</span>
+b <span class="token operator">=</span> <span class="token number">1.0</span> <span class="token comment"># 이 대입 연산으로 인해서 변수 b는 실수형 변수</span></code></pre></div>
 <br>
-<p>변수에는 다양한 형태의 ‘값’들이 있다.</p>
-<p>수학 시간에 사용하는 자연수, 정수, 실수, 허수들처럼 컴퓨터에서도 다양한 형태의 값들을 사용할 수 있다.<br>
-이를 <strong>자료형</strong>(data types)이라고 한다.</p>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 변수가 가지고 있는 값을 print() 함수로 출력할 수 있음</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>my_number<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>my_name<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>my_height<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>is_middle_school<span class="token punctuation">)</span></code></pre></div>
-<div class="gatsby-highlight" data-language="powershell"><pre class="language-powershell"><code class="language-powershell">100
-Kim
-172<span class="token punctuation">.</span>3
-True</code></pre></div>
-<br>
-<p>type( ) 함수는 파라미터로 주어지는 변수의 type(자료형)을 <strong>반환</strong>한다.
-type( ) 함수는 파이썬 내장 함수이다.</p>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 변수의 자료형은 type() 함수로 확인할 수 있음</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">type</span><span class="token punctuation">(</span>my_number<span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">type</span><span class="token punctuation">(</span>my_name<span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">type</span><span class="token punctuation">(</span>my_height<span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">type</span><span class="token punctuation">(</span>is_middle_school<span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre></div>
-<div class="gatsby-highlight" data-language="powershell"><pre class="language-powershell"><code class="language-powershell">&lt;<span class="token keyword">class</span> <span class="token string">'int'</span>>
-&lt;<span class="token keyword">class</span> <span class="token string">'str'</span>>
-&lt;<span class="token keyword">class</span> <span class="token string">'float'</span>>
-&lt;<span class="token keyword">class</span> <span class="token string">'bool'</span>></code></pre></div>
-<br>
-<p>print와 type함수를 응용해서 print(type(my_number))를 만들 수 있다.<br>
-이 문장은 type(my_number)라는 함수가 가장 먼저 실행된다.<br>
-이 type( ) 함수는 파라미터의 자료형을 <strong>반환</strong>한다.<br>
-print( ) 함수는 반환된 <strong>그 값</strong>을 출력한다.</p>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 함수의 반환값을 아래와 같이 변수에 넣어서 사용 가능</span>
-a <span class="token operator">=</span> <span class="token builtin">type</span><span class="token punctuation">(</span>my_name<span class="token punctuation">)</span>
+<h2 id="2-형-변환" style="position:relative;"><a href="#2-%ED%98%95-%EB%B3%80%ED%99%98" aria-label="2 형 변환 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. 형 변환</h2>
+<h3 id="1-자동-형-변환묵시적-형-변환" style="position:relative;"><a href="#1-%EC%9E%90%EB%8F%99-%ED%98%95-%EB%B3%80%ED%99%98%EB%AC%B5%EC%8B%9C%EC%A0%81-%ED%98%95-%EB%B3%80%ED%99%98" aria-label="1 자동 형 변환묵시적 형 변환 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1) 자동 형 변환(묵시적 형 변환)</h3>
+<p>형 변환(type conversion)이 자동으로 일어나는 것을 자동 형 변환(implicit type conversion)이라고 한다.</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 아래의 변수 add는 a+b에 의해 정수와 실수간의 덧셈으로 add 변수도 실수형 변수가 된다.</span>
+add <span class="token operator">=</span> a <span class="token operator">+</span> b
 <span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>add<span class="token punctuation">)</span>
 
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">type</span><span class="token punctuation">(</span>my_name<span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre></div>
-<div class="gatsby-highlight" data-language="powershell"><pre class="language-powershell"><code class="language-powershell">&lt;<span class="token keyword">class</span> <span class="token string">'str'</span>>
-&lt;<span class="token keyword">class</span> <span class="token string">'str'</span>></code></pre></div>
-<br>
-<p>그리고 변수는 당연히 <strong>수정할 수 있다.</strong></p>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 변수에 새로운 값을 넣으면 기존 값은 지워지고 새로운 값으로 대체됨</span>
-
-a <span class="token operator">=</span> <span class="token number">10</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
-
-a <span class="token operator">=</span> <span class="token number">20</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
-
-<span class="token comment"># Boolean 자료형은 True 또는 False 값만 저장할 수 있음</span>
-<span class="token comment"># True/ False의 첫 글자는 '대문자'라는 점에 유의(파이썬은 대문자와 소문자를 구별)</span>
-is_middle_school <span class="token operator">=</span> <span class="token boolean">False</span>
-
-<span class="token keyword">print</span><span class="token punctuation">(</span>is_middle_school<span class="token punctuation">)</span></code></pre></div>
-<div class="gatsby-highlight" data-language="powershell"><pre class="language-powershell"><code class="language-powershell">10
-20
-False</code></pre></div>
-<br>
-<p>파이썬은 <strong>동적 타입 바인딩</strong>이라서 프로그램 실행 중에 변수의 자료형을 바꿀 수 있다.<br>
-동적 타입 바인딩(dynamic type binding)은 파이썬에서 아주 중요한 개념이다.<br>
-이 점이 C 언어와 같은 정적 타입 바인딩 언어와 큰 차이점이다.</p>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 변수에는 아무런 값이나 저장할 수 있음</span>
-
-a <span class="token operator">=</span> <span class="token number">10</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">type</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">)</span>
-
-a <span class="token operator">=</span> <span class="token number">10.1</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">type</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">)</span>
-
-a <span class="token operator">=</span> <span class="token string">"fasdfasfdsfsadfsdadsafsdafsdafsdafds"</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">type</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">)</span>
-
-<span class="token comment"># 변수에 값을 대입하고 이를 이용해서 수식 계산을 해보기</span>
-
-i <span class="token operator">=</span> <span class="token number">10</span>
-j <span class="token operator">=</span> <span class="token number">20</span>
-
-add <span class="token operator">=</span> i <span class="token operator">+</span> j <span class="token comment"># 덧셈 연산자</span>
-multiplication <span class="token operator">=</span> i <span class="token operator">*</span> j <span class="token comment"># 곱셈 연산자</span>
-
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"add: "</span><span class="token punctuation">,</span> add<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"multi: "</span><span class="token punctuation">,</span> multiplication<span class="token punctuation">)</span></code></pre></div>
-<div class="gatsby-highlight" data-language="powershell"><pre class="language-powershell"><code class="language-powershell">10
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">type</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">type</span><span class="token punctuation">(</span>add<span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="powershell"><pre class="language-powershell"><code class="language-powershell">1
+1<span class="token punctuation">.</span>0
+2<span class="token punctuation">.</span>0
 &lt;<span class="token keyword">class</span> <span class="token string">'int'</span>>
-10<span class="token punctuation">.</span>1
 &lt;<span class="token keyword">class</span> <span class="token string">'float'</span>>
-fasdfasfdsfsadfsdadsafsdafsdafsdafds
-&lt;<span class="token keyword">class</span> <span class="token string">'str'</span>>
-add:  30
-multi:  200</code></pre></div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/python/study/function/"><div class="direction">이전 글</div><div class="title">Python | 1. 함수, 내장함수, Print 함수</div></a></div><div class="post-navigator-card-wrapper"><a class="post-card next" href="/python/study/input/"><div class="direction">다음 글</div><div class="title">Python | 3. input 함수</div></a></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2024<!-- --> <a href="https://github.com/xininny">전미진</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-42SK0722KJ"></script><script>
+&lt;<span class="token keyword">class</span> <span class="token string">'float'</span>></code></pre></div>
+<br>
+<h3 id="2-명시적-형-변환" style="position:relative;"><a href="#2-%EB%AA%85%EC%8B%9C%EC%A0%81-%ED%98%95-%EB%B3%80%ED%99%98" aria-label="2 명시적 형 변환 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2) 명시적 형 변환</h3>
+<p>프로그래머가 형변환을 명령하는 것을 명시적 형 변환(explicit type conversion, type casting)이라고 한다.</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># int 값으로 변환</span>
+<span class="token comment"># int() 함수는 파라미터를 정수로 변경한다.</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">(</span><span class="token number">10.1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 문자열 '123'도 int 형 123으로 변경한다.</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">(</span><span class="token string">'123'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 문자열로 변환</span>
+
+a <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+
+b <span class="token operator">=</span> a <span class="token operator">+</span> <span class="token string">' '</span><span class="token operator">+</span> <span class="token string">'Python'</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="powershell"><pre class="language-powershell"><code class="language-powershell">10
+123
+123
+123 Python</code></pre></div>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># 그렇지만 'abc' 문자열을 int 형으로 변경할 수 없다.</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">(</span><span class="token string">'abc'</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="powershell"><pre class="language-powershell"><code class="language-powershell"><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span>
+ValueError                                Traceback <span class="token punctuation">(</span>most recent call last<span class="token punctuation">)</span>
+&lt;ipython-input-3-d90c0eef9887> in &lt;module><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      1 <span class="token comment"># 그렇지만 'abc' 문자열을 int 형으로 변경할 수 없다.</span>
+<span class="token operator">--</span><span class="token operator">--</span>> 2 print<span class="token punctuation">(</span>int<span class="token punctuation">(</span><span class="token string">'abc'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+ValueError: invalid literal <span class="token keyword">for</span> int<span class="token punctuation">(</span><span class="token punctuation">)</span> with base 10: <span class="token string">'abc'</span></code></pre></div>
+<br>
+<p>자료형의 이름과 동일한 형변환 함수들이 있다.<br>
+이는 클래스의 생성자(초기자)를 사용하는 것이다.<br>
+따라서 int( ), float( ), str( ), bool( ) 등의 형변환 함수가 있다.</p>
+<p>참고 사이트</p>
+<ul>
+<li>type conversion 함수 참고 사이트: <a href="https://intellipaat.com/blog/tutorial/python-tutorial/type-conversion-in-python/" target="_blank"> type conversion function</a></li>
+</ul>
+<div class="table-of-contents">
+<ul>
+<li>
+<p><a href="#1-%EC%9E%90%EB%A3%8C%ED%98%95">1. 자료형</a></p>
+</li>
+<li>
+<p><a href="#2-%ED%98%95-%EB%B3%80%ED%99%98">2. 형 변환</a></p>
+<ul>
+<li><a href="#1-%EC%9E%90%EB%8F%99-%ED%98%95-%EB%B3%80%ED%99%98%EB%AC%B5%EC%8B%9C%EC%A0%81-%ED%98%95-%EB%B3%80%ED%99%98">1) 자동 형 변환(묵시적 형 변환)</a></li>
+<li><a href="#2-%EB%AA%85%EC%8B%9C%EC%A0%81-%ED%98%95-%EB%B3%80%ED%99%98">2) 명시적 형 변환</a></li>
+</ul>
+</li>
+</ul>
+</div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/python/study/indentations/"><div class="direction">이전 글</div><div class="title">Python | 5. 들여쓰기</div></a></div><div class="post-navigator-card-wrapper"><a class="post-card next" href="/node.js/study/intro/"><div class="direction">다음 글</div><div class="title">Node. js | 1. Node. js 첫걸음</div></a></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2024<!-- --> <a href="https://github.com/xininny">전미진</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-42SK0722KJ"></script><script>
     window.GATSBY_GTAG_PLUGIN_GA_TRACKING_ID = (
       'G-42SK0722KJ'
     );
@@ -170,4 +147,4 @@ multi:  200</code></pre></div></div></div><div class="post-navigator"><div class
     window.gtag = gtag;
     gtag('js', new Date());
     gtag('config', 'G-42SK0722KJ', options);
-  </script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/python/study/variables/";window.___webpackCompilationHash="ba5f026243f9e8e71d64";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-f196834924f88edde8fc.js"],"app":["/app-63e9617b3796f6fd2397.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-12b5d8159c7e67968cd6.js"],"component---src-pages-404-js":["/component---src-pages-404-js-8a8f7d3d2c342b72400e.js"],"component---src-pages-about-js":["/component---src-pages-about-js-53c51b967b7c7ebf2161.js"],"component---src-pages-index-js":["/component---src-pages-index-js-6eb614986f21f4e72ca4.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-842c3d7e07eb7ef5f439.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-e2e4c74724e028ddd3f4.js"]};/*]]>*/</script><script src="/polyfill-f196834924f88edde8fc.js" nomodule=""></script><script src="/app-63e9617b3796f6fd2397.js" async=""></script><script src="/framework-de157c6b30d4790e4e81.js" async=""></script><script src="/webpack-runtime-6df48cce433b62ad9ecd.js" async=""></script></body></html>
+  </script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/python/study/datatype/";window.___webpackCompilationHash="ba5f026243f9e8e71d64";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-f196834924f88edde8fc.js"],"app":["/app-63e9617b3796f6fd2397.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-12b5d8159c7e67968cd6.js"],"component---src-pages-404-js":["/component---src-pages-404-js-8a8f7d3d2c342b72400e.js"],"component---src-pages-about-js":["/component---src-pages-about-js-53c51b967b7c7ebf2161.js"],"component---src-pages-index-js":["/component---src-pages-index-js-6eb614986f21f4e72ca4.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-842c3d7e07eb7ef5f439.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-e2e4c74724e028ddd3f4.js"]};/*]]>*/</script><script src="/polyfill-f196834924f88edde8fc.js" nomodule=""></script><script src="/app-63e9617b3796f6fd2397.js" async=""></script><script src="/framework-de157c6b30d4790e4e81.js" async=""></script><script src="/webpack-runtime-6df48cce433b62ad9ecd.js" async=""></script></body></html>
