@@ -9,7 +9,9 @@ categories: Python
 
 딕셔너리는 Key와 Value를 한 쌍으로 가지는 자료형이다.@
 
-### Dictionary 자료형
+<br>
+
+## Dictionary 자료형
 
 ```python
 # 딕셔너리 객체 생성
