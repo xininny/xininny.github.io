@@ -36,11 +36,11 @@ self.__precacheManifest = [
     "url": "framework-de157c6b30d4790e4e81.js"
   },
   {
-    "url": "app-63e9617b3796f6fd2397.js"
+    "url": "app-8c6b475811d13f53a00c.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "68f8dee2206de246650bf4381f640bbf"
+    "revision": "1245e5c3525d1d2c7ea78526d2b8e0b9"
   },
   {
     "url": "static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"
@@ -166,7 +166,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-63e9617b3796f6fd2397.js`))) {
+  if (!resources || !(await caches.match(`/app-8c6b475811d13f53a00c.js`))) {
     return await fetch(event.request)
   }
 
