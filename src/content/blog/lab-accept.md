@@ -5,6 +5,7 @@ pubDate: 2024-11-08
 updatedDate: 2025-07-15
 tags: ["Accept"]
 category: "💾 Record"
+draft: true
 ---
 성균관대학교 소프트웨어학과 대학원 융합보안트랙  2025 전기모집에 석사로 지원했고, 합격했다! 👏
 
