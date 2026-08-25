@@ -1,0 +1,241 @@
+/*
+  xininny blog — design system.
+  Pretendard font + Radix gray palette (matching the previous morethan-log blog).
+  Light/dark theme driven by [data-theme] on <html>.
+*/
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: url('/fonts/Pretendard-Regular.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+	src: url('/fonts/Pretendard-Medium.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+	src: url('/fonts/Pretendard-SemiBold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	src: url('/fonts/Pretendard-Bold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+	src: url('/fonts/Pretendard-ExtraBold.woff2') format('woff2');
+}
+
+:root {
+	/* base — Radix gray (light) */
+	--bg: #f9f9f9;
+	--bg-secondary: #f0f0f0;
+	--surface: #ffffff;
+	--border: #ececec;
+	--border-strong: #d9d9d9;
+	--hover: #f0f0f0;
+	--text: #202020;
+	--text-strong: #202020;
+	--muted: #646464;
+	--faint: #838383;
+	--link: #0d74ce;
+	--sel: rgba(0, 0, 0, 0.06);
+	--radius: 14px;
+	--shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+	--font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		'Apple SD Gothic Neo', 'Malgun Gothic', Roboto, Helvetica, Arial, sans-serif;
+	--font-mono: 'SFMono-Regular', Consolas, ui-monospace, 'Liberation Mono', Menlo, monospace;
+
+	/* Notion pill colors — light */
+	--nt-gray-bg: #f1f1ef;   --nt-gray-fg: #5a5a57;
+	--nt-brown-bg: #f3eeee;  --nt-brown-fg: #976d57;
+	--nt-orange-bg: #f8ecdf; --nt-orange-fg: #b25e1f;
+	--nt-yellow-bg: #faf3dd; --nt-yellow-fg: #a1802b;
+	--nt-green-bg: #eef3ed;  --nt-green-fg: #46744f;
+	--nt-blue-bg: #e7f3f8;   --nt-blue-fg: #337ea9;
+	--nt-purple-bg: #f6f3f9; --nt-purple-fg: #8a67ab;
+	--nt-pink-bg: #faf1f5;   --nt-pink-fg: #b35488;
+	--nt-red-bg: #fdebec;    --nt-red-fg: #c4554d;
+}
+
+:root[data-theme='dark'] {
+	/* base — Radix gray (dark) */
+	--bg: #191919;
+	--bg-secondary: #222222;
+	--surface: #2a2a2a;
+	--border: #333333;
+	--border-strong: #3a3a3a;
+	--hover: #222222;
+	--text: #eeeeee;
+	--text-strong: #eeeeee;
+	--muted: #b4b4b4;
+	--faint: #7b7b7b;
+	--link: #70b8ff;
+	--sel: rgba(255, 255, 255, 0.08);
+	--shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+
+	/* Notion pill colors — dark */
+	--nt-gray-bg: #2f2f2f;   --nt-gray-fg: #9b9b9b;
+	--nt-brown-bg: #4a3228;  --nt-brown-fg: #ba856f;
+	--nt-orange-bg: #5c3b23; --nt-orange-fg: #c77d48;
+	--nt-yellow-bg: #56452f; --nt-yellow-fg: #ca9849;
+	--nt-green-bg: #243d30;  --nt-green-fg: #6b9b78;
+	--nt-blue-bg: #143a4e;   --nt-blue-fg: #5e9ecb;
+	--nt-purple-bg: #3c2d49; --nt-purple-fg: #9a6dd7;
+	--nt-pink-bg: #4e2c3c;   --nt-pink-fg: #d15796;
+	--nt-red-bg: #522e2a;    --nt-red-fg: #df5452;
+}
+
+* { box-sizing: border-box; }
+
+body {
+	font-family: var(--font-sans);
+	margin: 0;
+	padding: 0;
+	background: var(--bg);
+	color: var(--text);
+	font-size: 16px;
+	line-height: 1.65;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 0.5rem 0;
+	color: var(--text-strong);
+	line-height: 1.3;
+	font-weight: 600;
+	letter-spacing: -0.01em;
+}
+h1 { font-size: 2rem; font-weight: 700; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1.1rem; }
+
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+p { margin: 0 0 1em; }
+strong, b { font-weight: 600; }
+
+img { max-width: 100%; height: auto; border-radius: 4px; }
+
+hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+/* ---------- Notion pill colors ---------- */
+.nt {
+	display: inline-block;
+	font-size: 0.8rem;
+	line-height: 1.4;
+	padding: 0.1rem 0.6rem;
+	border-radius: 9999px;
+	white-space: nowrap;
+}
+.nt-gray   { background: var(--nt-gray-bg);   color: var(--nt-gray-fg); }
+.nt-brown  { background: var(--nt-brown-bg);  color: var(--nt-brown-fg); }
+.nt-orange { background: var(--nt-orange-bg); color: var(--nt-orange-fg); }
+.nt-yellow { background: var(--nt-yellow-bg); color: var(--nt-yellow-fg); }
+.nt-green  { background: var(--nt-green-bg);  color: var(--nt-green-fg); }
+.nt-blue   { background: var(--nt-blue-bg);   color: var(--nt-blue-fg); }
+.nt-purple { background: var(--nt-purple-bg); color: var(--nt-purple-fg); }
+.nt-pink   { background: var(--nt-pink-bg);   color: var(--nt-pink-fg); }
+.nt-red    { background: var(--nt-red-bg);    color: var(--nt-red-fg); }
+
+/* ---------- Layout ---------- */
+.container {
+	width: 100%;
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.card {
+	background: var(--surface);
+	border-radius: var(--radius);
+}
+
+/* ---------- Markdown / prose (post body) ---------- */
+.prose { font-size: 1rem; color: var(--text); }
+.prose p { margin: 0 0 1.2em; }
+.prose h2 { margin-top: 1.8em; padding-bottom: 0.2em; }
+.prose h3 { margin-top: 1.4em; }
+.prose ul, .prose ol { padding-left: 1.4em; margin: 0 0 1.2em; }
+.prose li { margin-bottom: 0.25em; }
+.prose img {
+	display: block;
+	margin: 1.4em auto;
+	border-radius: 4px;
+}
+.prose a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+.prose blockquote {
+	border-left: 3px solid var(--border-strong);
+	padding: 0.1em 0 0.1em 1em;
+	margin: 0 0 1.2em;
+	color: var(--muted);
+}
+.prose blockquote p { margin: 0; }
+.prose code {
+	font-family: var(--font-mono);
+	font-size: 0.86em;
+	background: var(--nt-gray-bg);
+	color: #eb5757;
+	padding: 0.1em 0.4em;
+	border-radius: 4px;
+}
+:root[data-theme='dark'] .prose code { color: #ff7a7a; }
+.prose pre {
+	background: var(--bg-secondary);
+	padding: 1em 1.2em;
+	border-radius: 6px;
+	overflow-x: auto;
+	border: 1px solid var(--border);
+	margin: 0 0 1.2em;
+}
+.prose pre code {
+	all: unset;
+	font-family: var(--font-mono);
+	font-size: 0.88em;
+}
+.prose table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0 0 1.2em;
+	display: block;
+	overflow-x: auto;
+	font-size: 0.95em;
+}
+.prose th, .prose td { border: 1px solid var(--border); padding: 0.45em 0.75em; text-align: left; }
+.prose th { background: var(--bg-secondary); font-weight: 600; }
+
+/* ---------- Accessibility ---------- */
+.sr-only {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+	h1 { font-size: 1.7rem; }
+}

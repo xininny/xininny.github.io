@@ -1,0 +1,123 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import ProfileCard from '../components/ProfileCard.astro';
+import { SITE_TITLE } from '../consts';
+
+const ME = 'Mijin Jeon';
+
+const papers = [
+	{
+		title:
+			'A Decade-long Landscape of Advanced Persistent Threats: Longitudinal Analysis and Global Trends',
+		authors: [
+			'Shakhzod Yuldoshkhujaev',
+			'Mijin Jeon',
+			'Doowon Kim',
+			'Nick Nikiforakis',
+			'Hyungjoon Koo',
+		],
+		venue:
+			"In Proceedings of the 32nd ACM Conference on Computer and Communications Security (CCS'25)",
+		year: 2025,
+		bibtex: `@inproceedings{aptstudy-ccs25,
+  author = {Yuldoshkhujaev, Shakhzod and Jeon, Mijin and Kim, Doowon and Nikiforakis, Nick and Koo, Hyungjoon},
+  title = {A Decade-long Landscape of Advanced Persistent Threats: Longitudinal Analysis and Global Trends (To appear)},
+  year = {2025},
+  month = oct,
+  publisher = {ACM},
+  booktitle = {Proceedings of the 32nd ACM Conference on Computer and Communications Security (CCS'25)},
+  keywords = {APT, landscape, logitudinal analysis, global trends},
+  location = {Taiwan},
+  series = {CCS '25},
+}`,
+	},
+	{
+		title: 'Trends in LLM-assisted Attacks',
+		authors: ['Mijin Jeon', 'Yujeong Kwon', 'Hyungjoon Koo'],
+		venue: "Conference on Information Security and Cryptography-Summer (CISC-S'25)",
+		year: 2025,
+		bibtex: `@inproceedings{llmattacks-cisc25,
+  author = {Jeon, Mijin and Kwon, Yujeong and Koo, Hyungjoon},
+  title = {Trends in LLM-assisted Attacks},
+  year = {2025},
+  booktitle = {Conference on Information Security and Cryptography-Summer(CISC-S'25)},
+  publisher = {KIISC},
+}`,
+	},
+];
+---
+
+<PageLayout title={`Publications · ${SITE_TITLE}`} description="Publications by Mijin Jeon">
+	<ProfileCard slot="side" />
+
+	<h1 class="page-title">Publications</h1>
+
+	<ol class="paper-list">
+		{
+			papers.map((p, i) => (
+				<li class="paper card">
+					<h2 class="p-title">{p.title}</h2>
+					<p class="p-authors">
+						{p.authors.map((a, idx) => (
+							<>
+								<span class={a === ME ? 'me' : ''}>{a}</span>
+								{idx < p.authors.length - 1 && ', '}
+							</>
+						))}
+					</p>
+					<p class="p-venue">
+						{p.venue}, <span class="year">{p.year}</span>
+					</p>
+					<div class="p-actions">
+						<button class="btn bib-toggle" data-i={i}>BibTeX</button>
+					</div>
+					<pre class="bibtex" id={`bib-${i}`} hidden>{p.bibtex}</pre>
+				</li>
+			))
+		}
+	</ol>
+
+	<script is:inline>
+		document.querySelectorAll('.bib-toggle').forEach((btn) => {
+			btn.addEventListener('click', () => {
+				const el = document.getElementById('bib-' + btn.getAttribute('data-i'));
+				if (el) el.hidden = !el.hidden;
+			});
+		});
+	</script>
+
+	<style>
+		.page-title { margin: 0 0 1.4rem; }
+		.paper-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+		.paper { padding: 1.1rem 1.2rem; }
+		.p-title { font-size: 1.08rem; margin: 0 0 0.5rem; line-height: 1.45; }
+		.p-authors { margin: 0 0 0.3rem; font-size: 0.9rem; color: var(--muted); }
+		.p-authors .me { color: var(--text-strong); font-weight: 700; }
+		.p-venue { margin: 0 0 0.8rem; font-size: 0.9rem; color: var(--muted); font-style: italic; }
+		.p-venue .year { font-style: normal; }
+		.btn {
+			font: inherit;
+			font-size: 0.82rem;
+			cursor: pointer;
+			padding: 0.25rem 0.7rem;
+			border-radius: 4px;
+			border: 1px solid var(--border-strong);
+			background: transparent;
+			color: var(--muted);
+		}
+		.btn:hover { background: var(--hover); color: var(--text-strong); }
+		.bibtex {
+			margin: 0.8rem 0 0;
+			padding: 0.9rem 1rem;
+			background: var(--bg-secondary);
+			border: 1px solid var(--border);
+			border-radius: 6px;
+			font-family: var(--font-mono);
+			font-size: 0.78rem;
+			line-height: 1.5;
+			overflow-x: auto;
+			white-space: pre;
+			color: var(--text);
+		}
+	</style>
+</PageLayout>

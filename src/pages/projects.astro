@@ -1,0 +1,124 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import ProfileCard from '../components/ProfileCard.astro';
+import { SITE_TITLE } from '../consts';
+
+const projects = [
+	{
+		year: '2024',
+		title: 'QR Reader & Generator',
+		tagline: 'Chrome Extension · Frontend',
+		description:
+			'A privacy-first Chrome extension for generating and scanning QR codes — fully offline, no sign-up or tracking.',
+		technologies: ['HTML', 'CSS', 'JavaScript'],
+		logo: '/image/projects/qr-reader-generator-logo.png',
+		webStore:
+			'https://chromewebstore.google.com/detail/qr-reader-generator/ijpcbkmfaeepjimbaadgiafalbakolmg',
+		github: 'https://github.com/xininny/QR-Reader-Generator',
+	},
+	{
+		year: '2024',
+		title: 'SecQR',
+		tagline: 'Chrome Extension · Frontend, Backend',
+		description:
+			'A Chrome extension that scans QR codes and flags malicious URLs in real time using ML-based classification.',
+		technologies: ['HTML', 'CSS', 'JavaScript', 'Flask', 'Python'],
+		logo: '/image/projects/secqr-logo.png',
+		github: 'https://github.com/xininny/SecQR',
+	},
+	{
+		year: '2024',
+		title: 'Share-it',
+		tagline: 'Web Application · Frontend',
+		description:
+			'A campus item-rental platform with school-email verification, real-time chat, and peer ratings.',
+		technologies: ['React', 'JavaScript'],
+		logo: '/image/projects/share-it-logo.png',
+		github: 'https://github.com/xininny/Share-it-frontend',
+	},
+	{
+		year: '2023',
+		title: 'GaRiDa',
+		tagline: 'Mobile Application · Frontend, Backend',
+		description:
+			'A mobile app that masks faces in social-media photos using AI for natural, privacy-preserving results.',
+		technologies: ['Flutter', 'Python', 'FastAPI', 'Docker'],
+		logo: '/image/projects/garida-logo.png',
+		github: 'https://github.com/orgs/i4-AI-for-Security/repositories',
+	},
+];
+---
+
+<PageLayout title={`Projects · ${SITE_TITLE}`} description="Projects by Mijin Jeon">
+	<ProfileCard slot="side" />
+
+	<h1 class="page-title">Projects</h1>
+
+	<div class="proj-list">
+		{
+			projects.map((p) => (
+				<article class="proj card">
+					<header class="p-head">
+						<img class="logo" src={p.logo} alt={`${p.title} logo`} width="40" height="40" />
+						<div class="p-headtext">
+							<h2 class="p-title">{p.title}</h2>
+							<p class="p-tagline">{p.tagline}</p>
+						</div>
+						<span class="p-year">{p.year}</span>
+					</header>
+					<p class="p-desc">{p.description}</p>
+					<div class="p-foot">
+						<div class="p-tech">
+							{p.technologies.map((t) => (
+								<span class="nt nt-gray">{t}</span>
+							))}
+						</div>
+						<div class="p-links">
+							{p.github && (
+								<a href={p.github} target="_blank" rel="noopener" class="p-link">
+									GitHub ↗
+								</a>
+							)}
+							{p.webStore && (
+								<a href={p.webStore} target="_blank" rel="noopener" class="p-link">
+									Store ↗
+								</a>
+							)}
+						</div>
+					</div>
+				</article>
+			))
+		}
+	</div>
+
+	<style>
+		.page-title { margin: 0 0 1.4rem; }
+		.proj-list { display: grid; gap: 0.8rem; }
+		.proj { padding: 1.1rem 1.2rem; }
+		.p-head { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 0.6rem; }
+		.logo {
+			width: 40px;
+			height: 40px;
+			border-radius: 8px;
+			object-fit: cover;
+			border: 1px solid var(--border);
+			background: var(--bg-secondary);
+			flex-shrink: 0;
+		}
+		.p-headtext { flex: 1; min-width: 0; }
+		.p-title { margin: 0; font-size: 1.1rem; }
+		.p-tagline { margin: 0.05rem 0 0; font-size: 0.82rem; color: var(--muted); }
+		.p-year { color: var(--faint); font-size: 0.85rem; }
+		.p-desc { margin: 0 0 0.9rem; font-size: 0.9rem; color: var(--text); line-height: 1.55; }
+		.p-foot {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+			gap: 0.6rem;
+		}
+		.p-tech { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+		.p-links { display: flex; gap: 0.9rem; }
+		.p-link { font-size: 0.85rem; font-weight: 500; white-space: nowrap; }
+	</style>
+</PageLayout>

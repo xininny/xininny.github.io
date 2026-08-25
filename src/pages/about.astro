@@ -1,0 +1,174 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import ProfileCard from '../components/ProfileCard.astro';
+import { PROFILE, SITE_TITLE } from '../consts';
+
+const education = [
+	{
+		degree: 'Master',
+		institution: 'Sungkyunkwan University',
+		period: '2025 – 2027',
+		major: 'Computer Science and Engineering (SecAI Lab)',
+	},
+	{
+		degree: 'Bachelor',
+		institution: 'The Catholic University of Korea',
+		period: '2021 – 2025',
+		major: 'Computer Science and Information Engineering',
+	},
+];
+
+const experience = [
+	{
+		title: 'Undergraduate Research Intern',
+		company: 'SecAI Lab, Sungkyunkwan University',
+		location: 'Seoul, South Korea',
+		period: 'July 2024 – March 2025',
+	},
+];
+
+const projects = [
+	{ year: '2024', title: 'QR Reader & Generator', role: 'Frontend', tech: ['HTML', 'CSS'] },
+	{ year: '2024', title: 'SecQR', role: 'Frontend & Backend', tech: ['HTML', 'CSS', 'Flask'] },
+	{ year: '2024', title: 'Share-it', role: 'Frontend', tech: ['React', 'JavaScript'] },
+	{ year: '2023', title: 'GaRiDa', role: 'Frontend & Backend', tech: ['Flutter', 'Python', 'FastAPI', 'Docker'] },
+];
+
+const skills: Record<string, string[]> = {
+	Programming: ['JavaScript', 'TypeScript', 'Python', 'Java', 'C++'],
+	Frontend: ['React', 'Next.js', 'HTML/CSS', 'Emotion', 'Styled Components'],
+	Backend: ['Node.js', 'REST APIs', 'Database Design'],
+	'Tools & Platforms': ['Git', 'VS Code', 'Notion API', 'Vercel', 'GitHub'],
+	Research: ['Academic Writing', 'Data Analysis', 'Literature Review'],
+};
+---
+
+<PageLayout title={`About · ${SITE_TITLE}`} description="Mijin Jeon — Security Engineer">
+	<ProfileCard slot="side" />
+
+	<h1 class="page-title">About</h1>
+
+	<section class="intro">
+		<p>
+			I am a Master&rsquo;s student in Computer Science and Engineering at
+			Sungkyunkwan University (SecAI Lab), conducting research at the intersection of
+			cybersecurity and artificial intelligence. Currently, my work focuses on binary
+			reversing and its applications in security analysis.
+		</p>
+	</section>
+
+	<section class="basic card">
+		<h2 class="person">Mijin Jeon</h2>
+		<p class="line"><span class="k">Current</span> Master&rsquo;s Student</p>
+		<p class="line"><span class="k">Email</span> <a href={`mailto:${PROFILE.email}`}>{PROFILE.email}</a></p>
+	</section>
+
+	<section class="cv-section">
+		<h2 class="s-title">Education</h2>
+		{
+			education.map((e) => (
+				<div class="row">
+					<div class="row-main">
+						<span class="row-title">{e.degree}</span>
+						<span class="row-sub">{e.institution}</span>
+						<span class="row-desc">{e.major}</span>
+					</div>
+					<span class="row-period">{e.period}</span>
+				</div>
+			))
+		}
+	</section>
+
+	<section class="cv-section">
+		<h2 class="s-title">Experience</h2>
+		{
+			experience.map((e) => (
+				<div class="row">
+					<div class="row-main">
+						<span class="row-title">{e.title}</span>
+						<span class="row-sub">{e.company}</span>
+						<span class="row-desc">{e.location}</span>
+					</div>
+					<span class="row-period">{e.period}</span>
+				</div>
+			))
+		}
+	</section>
+
+	<section class="cv-section">
+		<h2 class="s-title">Projects</h2>
+		{
+			projects.map((p) => (
+				<div class="row">
+					<div class="row-main">
+						<span class="row-title">
+							{p.title} <span class="role">· {p.role}</span>
+						</span>
+						<div class="tech">
+							{p.tech.map((t) => (
+								<span class="nt nt-gray">{t}</span>
+							))}
+						</div>
+					</div>
+					<span class="row-period">{p.year}</span>
+				</div>
+			))
+		}
+	</section>
+
+	<section class="cv-section">
+		<h2 class="s-title">Skills</h2>
+		<div class="skills">
+			{
+				Object.entries(skills).map(([cat, items]) => (
+					<div class="skill-row">
+						<span class="skill-cat">{cat}</span>
+						<div class="skill-tags">
+							{items.map((s) => (
+								<span class="nt nt-gray">{s}</span>
+							))}
+						</div>
+					</div>
+				))
+			}
+		</div>
+	</section>
+
+	<style>
+		.page-title { margin: 0 0 1.2rem; }
+		.intro { font-size: 1rem; line-height: 1.75; color: var(--text); margin-bottom: 2rem; }
+		.intro p { margin: 0; }
+		.basic { padding: 1.1rem 1.2rem; margin-bottom: 2rem; }
+		.person { margin: 0 0 0.6rem; font-size: 1.3rem; }
+		.line { margin: 0.15rem 0; font-size: 0.92rem; color: var(--text); }
+		.line .k { display: inline-block; width: 70px; color: var(--faint); }
+		.cv-section { margin-bottom: 2rem; }
+		.s-title {
+			font-size: 1.1rem;
+			margin: 0 0 0.9rem;
+			padding-bottom: 0.4rem;
+			border-bottom: 1px solid var(--border);
+		}
+		.row {
+			display: flex;
+			justify-content: space-between;
+			gap: 1rem;
+			padding: 0.55rem 0;
+		}
+		.row-main { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
+		.row-title { font-weight: 600; color: var(--text-strong); font-size: 0.98rem; }
+		.role { font-weight: 400; color: var(--muted); }
+		.row-sub { color: var(--muted); font-size: 0.9rem; }
+		.row-desc { color: var(--faint); font-size: 0.85rem; }
+		.row-period { color: var(--faint); font-size: 0.85rem; white-space: nowrap; }
+		.tech { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.3rem; }
+		.skills { display: grid; gap: 0.8rem; }
+		.skill-row { display: flex; gap: 1rem; align-items: baseline; }
+		.skill-cat { flex-shrink: 0; width: 130px; color: var(--muted); font-size: 0.9rem; font-weight: 600; }
+		.skill-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+		@media (max-width: 560px) {
+			.skill-row { flex-direction: column; gap: 0.35rem; }
+			.skill-cat { width: auto; }
+		}
+	</style>
+</PageLayout>

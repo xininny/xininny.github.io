@@ -1,0 +1,57 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+
+interface Props {
+	title: string;
+	description?: string;
+}
+const { title, description = '' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="ko">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+	<body>
+		<Header />
+		<div class="shell">
+			<aside class="shell-side">
+				<slot name="side" />
+			</aside>
+			<main class="shell-main">
+				<slot />
+			</main>
+		</div>
+
+		<style>
+			.shell {
+				max-width: 1080px;
+				margin: 0 auto;
+				padding: 2rem 20px 3rem;
+				display: grid;
+				grid-template-columns: 260px 1fr;
+				gap: 1.6rem;
+				align-items: start;
+			}
+			.shell-side {
+				display: grid;
+				gap: 1rem;
+				position: sticky;
+				top: 74px;
+			}
+			.shell-main {
+				min-width: 0;
+			}
+			@media (max-width: 860px) {
+				.shell {
+					grid-template-columns: 1fr;
+				}
+				.shell-side {
+					position: static;
+				}
+			}
+		</style>
+	</body>
+</html>
