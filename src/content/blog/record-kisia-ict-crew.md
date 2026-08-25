@@ -5,6 +5,7 @@ pubDate: 2024-10-27
 updatedDate: 2024-12-26
 tags: ["KISIA"]
 category: "💾 Record"
+draft: true
 ---
 KISIA AI 보안 개인정보반을 수료한 이후, 인공지능을 활용한 보안에 더욱 깊은 관심을 가지게 되었고, 새로운 프로젝트에도 도전해보고 싶었다. 
 
